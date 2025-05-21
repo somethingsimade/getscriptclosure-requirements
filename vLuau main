@@ -14,8 +14,8 @@
 		gh:TheGreatSageEqualToHeaven/Fiu (  Luau Bytecode Interpreter written in Luau  )
 --]]
 
-local Loader = require(script:WaitForChild("Fiu"))
-local Ception = require(script:WaitForChild("Ception"))
+local Loader = createFiu()
+local Ception = createCeption()
 
 local function ValidLuauBytecode(bytecode)
 	if bytecode:len(bytecode) == 0 then
